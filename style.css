@@ -33,14 +33,7 @@ td:first-child {
    MENU
    ========================= */
 
-    nav {
-        flex-direction: column;
-    }
-    nav a {
-        width: 80%;
-        text-align: center;
-    }
-}
+   
     nav {
     background-color: #005246;
     display: flex;
