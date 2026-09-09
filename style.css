@@ -1,0 +1,70 @@
+/* =========================
+   STYLE GÉNÉRAL
+   ========================= */
+
+body {
+    background-color: #e4e0ca;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   MENU DE NAVIGATION
+   ========================= */
+
+nav {
+    background-color: #7e3f2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #e4e0ca;
+    color: #7e3f2c;
+}
+
+
+/* =========================
+   IMAGES
+   ========================= */
+
+.image-centree {
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+}
+
+
+/* =========================
+   VERSION TÉLÉPHONE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 80%;
+        text-align: center;
+    }
+
+}
