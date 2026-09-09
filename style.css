@@ -1,19 +1,31 @@
-/* =========================
-   STYLE GÉNÉRAL
-   ========================= */
-
 body {
     background-color: #e4e0ca;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
 }
 
-main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
+table, th, td {
+    border: 1px solid #7e3f2c;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+th:first-child,
+td:first-child {
+    width: 40%;
+}
+
+
+/* Image centrée et adaptée à l'écran */
+
+.image-centree {
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    margin: 20px auto;
 }
 
 
@@ -25,167 +37,29 @@ nav {
     background-color: #7e3f2c;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 12px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    gap: 10px;
+    padding: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    padding: 8px 12px;
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #e4e0ca;
-    color: #7e3f2c;
-}
-
-
-/* =========================
-   TITRES
-   ========================= */
-
-h1 {
-    text-align: center;
-    color: #005246;
     text-decoration: underline;
 }
 
-.sous-titre {
-    color: #7ca171;
-    text-align: center;
-}
 
-.badge {
-    background-color: green;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
+/* Adaptation téléphone */
 
-
-/* =========================
-   IMAGE
-   ========================= */
-
-.image-centree {
-    display: block;
-    max-width: 90%;
-    max-height: 70vh;
-    width: auto;
-    height: auto;
-    margin: 20px auto;
-}
-
-
-/* =========================
-   ACCÈS RAPIDE
-   ========================= */
-
-.acces-rapide {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin: 40px auto;
-    max-width: 900px;
-}
-
-.carte-menu {
-    background-color: white;
-    color: #333;
-    text-decoration: none;
-    text-align: center;
-    padding: 25px;
-    border-radius: 12px;
-    border: 2px solid #7ca171;
-    transition: 0.3s;
-}
-
-.carte-menu:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-.carte-menu h3 {
-    color: #7e3f2c;
-    margin: 10px 0;
-}
-
-.carte-menu p {
-    margin: 0;
-}
-
-.icone {
-    font-size: 40px;
-}
-
-
-/* =========================
-   SECTIONS
-   ========================= */
-
-.titre-section {
-    background-color: #7ca171;
-    color: white;
-    text-align: center;
-    padding: 7px 12px;
-    border-radius: 12px;
-    width: fit-content;
-    margin: 35px auto 20px;
-}
-
-p {
-    line-height: 1.6;
-}
-
-
-/* =========================
-   TÉLÉPHONE
-   ========================= */
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 
     nav {
         flex-direction: column;
-    }
-
-    nav a {
-        width: 80%;
         text-align: center;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 21px;
-    }
-
-    p {
-        font-size: 17px;
-    }
-
-    .acces-rapide {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        margin: 25px auto;
-    }
-
-    .carte-menu {
-        padding: 20px;
     }
 
 }
