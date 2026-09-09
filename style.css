@@ -2,68 +2,53 @@
    STYLE GÉNÉRAL
    ========================= */
 
+body {
+    background-color: #e4e0ca;
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
 
-    <style>
-        body {
-            background-color: #e4e0ca;
-            margin: 0;
-            padding: 10px;
-        }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+/* =========================
+   TABLEAUX
+   ========================= */
 
-        table, th, td {
-            border: 1px solid #7e3f2c;
-        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-        th, td {
-            text-align: center;
-            vertical-align: middle;
-            padding: 8px;
-        }
+table,
+th,
+td {
+    border: 1px solid #7e3f2c;
+}
 
-        th:first-child,
-        td:first-child {
-            width: 40%;
-        }
-        .image-centree {
+th,
+td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+}
+
+th:first-child,
+td:first-child {
+    width: 40%;
+}
+
+
+/* =========================
+   IMAGES
+   ========================= */
+
+.image-centree {
     display: block;
     max-width: 90%;
     max-height: 80vh;
     width: auto;
     height: auto;
-    margin: 0 auto;
-}
-        @media screen and (max-width: 600px) {
-
-            h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 22px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-
-            table {
-                font-size: 15px;
-            }
-
-            th, td {
-                padding: 5px;
-            }
-        }
-    </style>
-body {
-    background-color: #e4e0ca;
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin: 20px auto;
 }
 
 
@@ -97,24 +82,31 @@ nav a:hover {
 
 
 /* =========================
-   IMAGES
-   ========================= */
-
-.image-centree {
-    display: block;
-    max-width: 90%;
-    max-height: 80vh;
-    width: auto;
-    height: auto;
-    margin: 20px auto;
-}
-
-
-/* =========================
    VERSION TÉLÉPHONE
    ========================= */
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 15px;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
 
     nav {
         flex-direction: column;
@@ -124,5 +116,4 @@ nav a:hover {
         width: 80%;
         text-align: center;
     }
-
 }
