@@ -23,6 +23,18 @@ details p strong {
     font-weight: bold;
 }
 
+details {
+    margin: 15px auto;
+    width: fit-content;
+}
+
+summary {
+    color: #005246;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /* Image centrée et adaptée à l'écran */
 
 .image-centree {
