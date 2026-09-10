@@ -14,7 +14,13 @@ th, td {
 th:first-child,
 td:first-child {
     width: 40%;
+details p {
+    font-weight: normal;
+}
 
+details p strong {
+    font-weight: bold;
+}
 
 /* Image centrée et adaptée à l'écran */
 
