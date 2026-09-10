@@ -75,3 +75,8 @@ nav a:hover {
     }
 
 }
+
+ul {
+    margin-left: 10px;
+    padding-left: 30px;
+}
