@@ -2,18 +2,24 @@ body {
     background-color: #e4e0ca;
 }
 
-table, th, td {
-    border: 1px solid #7e3f2c;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px auto;
+    table-layout: fixed;
+    border-collapse: collapse;
 }
 
-th, td {
-    text-align: center;
-    vertical-align: middle;
+td, th {
+  border: 1px solid #7e3f2c;
+  text-align: middle;
+  vertical-align : middle;
+  padding: 8px;
 }
 
-th:first-child,
-td:first-child {
-    width: 100%;
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 details p {
     font-weight: normal;
