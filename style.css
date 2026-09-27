@@ -13,7 +13,7 @@ th, td {
 
 th:first-child,
 td:first-child {
-    width: 40%;
+    width: 100%;
 }
 details p {
     font-weight: normal;
