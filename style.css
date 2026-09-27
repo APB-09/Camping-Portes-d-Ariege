@@ -160,3 +160,28 @@ ul {
         font-size: 12px;
     }
 }
+
+.marches {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.marches details {
+    border: 1px solid #7e3f2c;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.marches summary {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #005246;
+    font-weight: bold;
+}
+
+.marches details p {
+    text-align: center;
+    padding: 5px 15px 10px;
+    margin: 0;
+}
