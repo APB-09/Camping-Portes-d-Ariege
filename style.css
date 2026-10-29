@@ -185,3 +185,94 @@ ul {
     padding: 5px 15px 10px;
     margin: 0;
 }
+
+
+/* ACTIVITÉS AUTOUR DU CAMPING */
+
+.activites {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+.activites h1 {
+    color: #005246;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.intro-activites {
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.categorie-activites {
+    margin: 35px 0;
+}
+
+.categorie-activites h2 {
+    color: #005246;
+    border-bottom: 3px solid #7ca171;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.grille-activites {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.carte-activite {
+    background-color: #f5f1df;
+    border: 2px solid #7e3f2c;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    line-height: 1.6;
+}
+
+.carte-activite h3 {
+    color: #005246;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.carte-activite p {
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.carte-activite a {
+    color: #005246;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.carte-activite a:hover {
+    color: #7e3f2c;
+}
+
+/* AFFICHAGE SUR TÉLÉPHONE */
+
+@media screen and (max-width: 600px) {
+    .activites {
+        padding: 12px;
+    }
+
+    .grille-activites {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .carte-activite {
+        padding: 15px;
+    }
+
+    .categorie-activites h2 {
+        font-size: 1.25rem;
+    }
+}
